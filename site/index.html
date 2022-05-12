@@ -94,7 +94,7 @@
                     var button = document.createElement("BUTTON");
                     button.classList.add('btn');
                     button.innerHTML = token;
-                    button.
+                    button.setAttribute('title', out['python']['strftime']['codes'][token]['meaning'])
                     button.addEventListener('click', (e) => {
                         code = e.target.innerHTML;
                          fstringput(e.target.innerHTML);
