@@ -44,15 +44,17 @@
     <script>
 
 
+        // ugly protoyping for this idea ahead....
 
-
-
+        var DateTime = luxon.DateTime;
         var fstring = [];
-        var fdstring = [];
-        // fstringput(py(dt, e.target.innerHTML, out['python']['strftime']['codes'][code]['luxontoken']));
+        var myDiv = document.getElementById('demo');
+        var myTbody = document.querySelector("#myTable>tbody");
+        const dt = DateTime.now();
+        var dd = {};
 
         function fstringput(code, place) {
-
+            // Just really throw the formatted string up there as best we can for now.
             // add the token to the basic string - the native format (python strftime, etc)
             fstring.push(code);
 
@@ -61,53 +63,38 @@
             for (token in fstring) {
                 out.push(py(dt, code, dd['python']['strftime']['codes'][fstring[token]]['luxontoken']));
             }
-
-
-
             document.getElementById("fstring").value = fstring.join(' ');
-            // document.getElementById("fstringdata").value = DateTime.now().toFormat(fstring.join(' '));
             document.getElementById("fstringdata").value =out.join(' ');
-
-
-
-
         }
 
-
-
-
-
-        var DateTime = luxon.DateTime;
         function py(dt, token, luxtoken) {
-            // if luxtoken is null then do whatever needs to be done.
+            // Convert the token into the actual value given the datetime.
             if (luxtoken !== null) {
                 return dt.toFormat(luxtoken);
             }
-            return 'NA';
 
+            // if luxtoken is null then do whatever needs to be done.
+            // example python.strftime day of week doesn't have the same init number.
+            return 'NA';
         }
 
-        var myDiv = document.getElementById('demo');
-        const dt = DateTime.now();
-        var dd = {};
 
+        // Open up the conversion library.  Later on we'll filter this... for now... grab everything.
         fetch('model.json')
             .then(res => res.json())
             .then((out) => {
-                var myTbody = document.querySelector("#myTable>tbody");
-
                 dd = out;
+
+                // Loop through all of the tokens and generate the buttons
+                // and the documentation in the table.
+
                 for (token in out['python']['strftime']['codes']) {
-                    console.log(token);
-
-
-
 
                     var newRow = myTbody.insertRow();
-
                     var button = document.createElement("BUTTON");
                     button.classList.add('btn');
                     button.innerHTML = token;
+                    button.
                     button.addEventListener('click', (e) => {
                         code = e.target.innerHTML;
                          fstringput(e.target.innerHTML);
@@ -120,16 +107,7 @@
                     newRow.insertCell().append(py(dt, token, out['python']['strftime']['codes'][token]['luxontoken']));
 
                 }
-                console.log('now');
-                console.log('Output: ', out['python']);
-
-
-
-
-
             }).catch(err => console.error(err));
-
-
 
 
     </script>
