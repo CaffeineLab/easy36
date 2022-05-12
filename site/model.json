@@ -1,0 +1,192 @@
+{
+  "python": {
+    "strftime": {
+      "codes": {
+        "%a": {
+          "meaning": "Weekday as locale’s abbreviated name.",
+          "example": "Sun, Mon, Tue,...",
+          "luxontoken": "ccc"
+        },
+        "%A": {
+          "meaning": "Weekday as locale’s full name.",
+          "example": "Sunday, Monday, Tuesday",
+          "luxontoken": "cccc"
+        },
+        
+        "%w": {
+          "meaning": "Weekday as a decimal number, where 0 is Sunday and 6 is Saturday..",
+          "example": "0",
+          "luxontoken": null
+        },
+
+        "%d": {
+          "meaning": "Day of the month as a zero-padded decimal number..",
+          "example": "08",
+          "luxontoken": "dd"
+        },
+
+        "%-d": {
+          "meaning": "Day of the month as a decimal number. (Platform specific)",
+          "example": "8",
+          "luxontoken": "d"
+        },
+
+        "%b": {
+          "meaning": "Month as locale’s abbreviated name..",
+          "example": "Sep",
+          "luxontoken": "LLL"
+        },
+
+        "%B": {
+          "meaning": "Month as locale’s full name..",
+          "example": "September",
+          "luxontoken": "LLLL"
+        },
+
+        "%m": {
+          "meaning": "Month as a zero-padded decimal number..",
+          "example": "09",
+          "luxontoken": "LL"
+        },
+
+        "%-m": {
+          "meaning": "Month as a decimal number. (Platform specific).",
+          "example": "9",
+          "luxontoken": "L"
+        },
+        "%y": {
+          "meaning": "Year without century as a zero-padded decimal number.",
+          "example": "00, 01, …, 99",
+          "luxontoken": "yy"
+        },
+        "%Y": {
+          "meaning": "Year with century as a decimal number.",
+          "example": "0001, 0002, …, 2013, 2014, …, 9998, 9999",
+          "luxontoken": "yyyy"
+        },
+
+        "%H": {
+          "meaning": "Hour (24-hour clock) as a zero-padded decimal number..",
+          "example": "07",
+          "luxontoken": "HH"
+        },
+
+        "%-H": {
+          "meaning": "Hour (24-hour clock) as a decimal number. (Platform specific).",
+          "example": "7",
+          "luxontoken": "H"
+        },
+
+        "%I": {
+          "meaning": "Hour (12-hour clock) as a zero-padded decimal number..",
+          "example": "07",
+          "luxontoken": "hh"
+        },
+
+        "%-I": {
+          "meaning": "Hour (12-hour clock) as a decimal number. (Platform specific).",
+          "example": "7",
+          "luxontoken": "h"
+        },
+
+        "%p": {
+          "meaning": "Locale’s equivalent of either AM or PM..",
+          "example": "AM",
+          "luxontoken": "a"
+        },
+
+        "%M": {
+          "meaning": "Minute as a zero-padded decimal number..",
+          "example": "06",
+          "luxontoken": "mm"
+        },
+
+        "%-M": {
+          "meaning": "Minute as a decimal number. (Platform specific).",
+          "example": "6",
+          "luxontoken": "m"
+        },
+
+        "%S": {
+          "meaning": "Second as a zero-padded decimal number..",
+          "example": "05",
+          "luxontoken": "ss"
+        },
+
+        "%-S": {
+          "meaning": "Second as a decimal number. (Platform specific).",
+          "example": "5",
+          "luxontoken": "s"
+        },
+
+        "%f": {
+          "meaning": "Microsecond as a decimal number, zero-padded on the left..",
+          "example": "000000",
+          "luxontoken": null
+        },
+
+        "%z": {
+          "meaning": "UTC offset in the form ±HHMM[SS[.ffffff]] (empty string if the object is naive)..",
+          "example": "+0000",
+          "luxontoken": "ZZZ"
+        },
+
+        "%Z": {
+          "meaning": "Time zone name (empty string if the object is naive)..",
+          "example": "UTC",
+          "luxontoken": "ZZZZ"
+        },
+
+        "%j": {
+          "meaning": "Day of the year as a zero-padded decimal number..",
+          "example": "251",
+          "luxontoken": "ooo"
+        },
+
+        "%-j": {
+          "meaning": "Day of the year as a decimal number. (Platform specific).",
+          "example": "251",
+          "luxontoken": "o"
+        },
+
+        "%U": {
+          "meaning": "Week number of the year (Sunday as the first day of the week) as a zero padded decimal number. All days in a new year preceding the first Sunday are considered to be in week 0..",
+          "example": "36",
+          "luxontoken": "WWW"
+        },
+
+        "%W": {
+          "meaning": "Week number of the year (Monday as the first day of the week) as a decimal number. All days in a new year preceding the first Monday are considered to be in week 0..",
+          "example": "35",
+          "luxontoken": "W"
+        },
+
+        "%c": {
+          "meaning": "Locale’s appropriate date and time representation..",
+          "example": "Sun Sep 8 07:06:05 2013",
+          "luxontoken": "ccc LLL d TT yyyy "
+        },
+
+        "%x": {
+          "meaning": "Locale’s appropriate date representation..",
+          "example": "09/08/13",
+          "luxontoken": "D"
+        },
+
+        "%X": {
+          "meaning": "Locale’s appropriate time representation..",
+          "example": "07:06:05",
+          "luxontoken": "TT"
+        },
+
+        "%%": {
+          "meaning": "A literal '%' character..",
+          "example": "%",
+          "luxontoken": "%"
+        }
+      }
+    }
+  }
+}
+
+ 
