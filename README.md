@@ -1,6 +1,8 @@
 # EASY36
 Site providing insight to string formatting among languages.  Goal is to provide a simple click-editable map of all of a languages datetime format string so you can easily build the format you need.  Currently supporting Python's strftime() formatting tokens.  
 
+# Live
+https://easy36.com
 
 
 ## Documentation
